@@ -40,7 +40,7 @@
 ![Detail Mahasiswa](screenshots/Detail.png)
 
 ### 4. Form Tambah
-![Form Tambah](screenshots/Form Tambah.png)
+![Form Tambah](screenshots/FormTambah.png)
 
 ---
 
