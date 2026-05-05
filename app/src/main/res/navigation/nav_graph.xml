@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.studentcontactapp.fragments.HomeFragment"
+        android:label="Home">
+        <action
+            android:id="@+id/action_home_to_detail"
+            app:destination="@id/detailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.studentcontactapp.fragments.SearchFragment"
+        android:label="Search">
+        <action
+            android:id="@+id/action_search_to_detail"
+            app:destination="@id/detailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.studentcontactapp.fragments.ProfileFragment"
+        android:label="Profile" />
+
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.studentcontactapp.fragments.DetailFragment"
+        android:label="Detail">
+        <argument
+            android:name="studentId"
+            app:argType="integer"
+            android:defaultValue="-1" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/noteListFragment"
+        android:name="com.example.studentcontactapp.fragments.NoteListFragment"
+        android:label="Note List" />
+
+</navigation>
